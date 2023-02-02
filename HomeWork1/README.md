@@ -1,8 +1,11 @@
 ## Microservice Weather Stats using Python(Flask)
 
 # Steps to run
-1. Install the following packages 
-    $ pip install requests flask
+1. Install the packages using requirements.txt
+    $ cd ServiceWeather
+    $ pip install -r requirements.txt
+    $ cd ServiceZipCode
+    $ pip install -r requirements.txt
 2. Run the ServerTwo before running the first server
     $ python3 ServerTwo.py
 3. Run the ServerOne
