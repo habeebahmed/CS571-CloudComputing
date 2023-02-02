@@ -7,19 +7,20 @@ app = Flask(__name__)
 def get_zipcode(country_name, city_name):
     # API endpoint to get zip code from city name
     url: str = f"https://api.zippopotam.us/us/{country_name}/" + city_name
+    print("url", url)
     try:
         # Making a GET request to the API
         response = requests.get(url)
         data = response.json()
         zip_code = data["places"][0]["post code"]
-        response_weather = requests.get(f"http://localhost:9000/weather/{zip_code}")
+        response_weather = requests.get(f"http://172.17.0.4:9000/weather/{zip_code}")
         data_weather = response_weather.json()
         # Return response in JSON format
         return jsonify({"weather_stats": data_weather})
     except Exception as e:
         print("Err", e)
         # Return error in JSON format
-        return jsonify({"error": "Something went wrong"}), 404
+        return jsonify({"error": f"Something went wrong {e}"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)

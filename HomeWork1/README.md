@@ -19,3 +19,17 @@ http://localhost:5000/zipcode/ca/dublin
 
 # Limitation
 Need to specify state acronym for the api to work
+
+
+# Docker build and deploy
+## Server Two
+- $ cd ServiceWeather
+- $ docker build -t flask-app2:latest .
+- $ docker run -d -p 9000:9000 flask-app2
+
+## Server One
+- $ cd ServiceZipCode
+
+- `Make sure to replace the Internal IP of Server Two container in ServerOne at line 16, for me it was "172.17.0.4"`
+- $ docker build -t flask-app:latest .
+- $ docker run -d -p 5000:5000 flask-app

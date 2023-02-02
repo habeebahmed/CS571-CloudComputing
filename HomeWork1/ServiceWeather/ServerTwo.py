@@ -22,4 +22,4 @@ def get_weather(zipcode):
         # Return error in JSON format
         return json.dumps(error_message), 400
 if __name__ == '__main__':
-    app.run(debug=True, port=9000)
+    app.run(host="0.0.0.0", debug=True, port=9000)
