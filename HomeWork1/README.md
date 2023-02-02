@@ -19,10 +19,10 @@ http://localhost:5000/zipcode/ca/fremont
     
 http://localhost:5000/zipcode/ca/dublin
     
-    
-    
-    <img width="639" alt="image" src="https://user-images.githubusercontent.com/36078669/216307212-12c62f70-d4a7-4a93-9fb5-3a25ee56c884.png">
-    
+
+
+![Uploading image.png…]()
+
     
     
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/36078669/216307328-e770b8d0-43c4-4c39-bc1e-ad2ce78658bc.png">
