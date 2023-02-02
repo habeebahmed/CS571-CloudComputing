@@ -34,6 +34,8 @@ Need to specify state acronym for the api to work
 - $ docker build -t flask-app:latest .
 - $ docker run -d -p 5000:5000 flask-app
 
+# Terminal logs:
+<img width="1159" alt="image" src="https://user-images.githubusercontent.com/36078669/216307727-308bc273-3601-4fca-b3fb-6e4e42253ad8.png">
 
 <img width="1169" alt="image" src="https://user-images.githubusercontent.com/36078669/216456045-6f564e6a-e6ec-4986-abf0-32a0619aaebc.png">
     
@@ -45,4 +47,5 @@ Need to specify state acronym for the api to work
 <img width="563" alt="image" src="https://user-images.githubusercontent.com/36078669/216456556-a0fd1de6-0650-4f65-b700-e5a2fd63cc42.png">
 
  
-
+# Limitation
+Need to specify state acronym for the api to work
