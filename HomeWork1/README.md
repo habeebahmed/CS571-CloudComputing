@@ -33,3 +33,11 @@ Need to specify state acronym for the api to work
 - `Make sure to replace the Internal IP of Server Two container in ServerOne at line 16, for me it was "172.17.0.4"`
 - $ docker build -t flask-app:latest .
 - $ docker run -d -p 5000:5000 flask-app
+
+
+<img width="1169" alt="image" src="https://user-images.githubusercontent.com/36078669/216456045-6f564e6a-e6ec-4986-abf0-32a0619aaebc.png">
+    
+<img width="1247" alt="image" src="https://user-images.githubusercontent.com/36078669/216456311-0da0eecb-e0c1-4155-a149-876611616371.png">
+
+<img width="1026" alt="image" src="https://user-images.githubusercontent.com/36078669/216456365-1b68ad10-184f-4f69-b48e-90f755632b88.png">
+
