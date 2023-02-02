@@ -12,6 +12,7 @@ def get_zipcode(country_name, city_name):
         response = requests.get(url)
         data = response.json()
         zip_code = data["places"][0]["post code"]
+        # Make call to server two to get the weather stats         
         response_weather = requests.get(f"http://localhost:9000/weather/{zip_code}")
         data_weather = response_weather.json()
         # Return response in JSON format
