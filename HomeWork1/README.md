@@ -20,9 +20,6 @@ http://localhost:5000/zipcode/ca/fremont
 
 http://localhost:5000/zipcode/ca/dublin
 
-# Limitation
-Need to specify state acronym for the api to work
-
 
 # Docker build and deploy
 ## Server Two
