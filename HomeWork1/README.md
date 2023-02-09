@@ -16,9 +16,22 @@ Use the following api to test based on city name and state name
 http://localhost:5000/zipcode/<state short form>/<city name>
 
 examples:
+    
 http://localhost:5000/zipcode/ca/fremont
 
+    
 http://localhost:5000/zipcode/ca/dublin
+    
+
+<img width="519" alt="image" src="https://user-images.githubusercontent.com/36078669/216431875-4b2304b3-b7f3-4944-ab5b-eaef756dc43b.png">
+
+    
+    
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/36078669/216307328-e770b8d0-43c4-4c39-bc1e-ad2ce78658bc.png">
+
+# Terminal logs:
+<img width="1159" alt="image" src="https://user-images.githubusercontent.com/36078669/216307727-308bc273-3601-4fca-b3fb-6e4e42253ad8.png">
+
 
 
 # Docker build and deploy
