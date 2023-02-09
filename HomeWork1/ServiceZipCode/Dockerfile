@@ -15,7 +15,7 @@ EXPOSE 9000
 
 ENTRYPOINT ["python"]
 
-CMD ["ServerOne.py"]
+CMD ["ZipCodeService.py"]
 
 # Run the command to start the application
 # CMD ["python", "ServerOne.py"]

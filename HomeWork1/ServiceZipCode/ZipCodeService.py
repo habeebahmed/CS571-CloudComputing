@@ -3,17 +3,18 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+# http://localhost:5000/zipcode/ca/dublin
 @app.route("/zipcode/<country_name>/<city_name>")
 def get_zipcode(country_name, city_name):
     # API endpoint to get zip code from city name
     url: str = f"https://api.zippopotam.us/us/{country_name}/" + city_name
-    print("url", url)
     try:
         # Making a GET request to the API
         response = requests.get(url)
         data = response.json()
         zip_code = data["places"][0]["post code"]
-        response_weather = requests.get(f"http://172.17.0.4:9000/weather/{zip_code}")
+        # Change the IP according to Weather service local IP
+        response_weather = requests.get(f"http://172.17.0.2:9000/weather/{zip_code}")
         data_weather = response_weather.json()
         # Return response in JSON format
         return jsonify({"weather_stats": data_weather})

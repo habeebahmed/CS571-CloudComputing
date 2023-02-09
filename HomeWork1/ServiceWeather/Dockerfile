@@ -15,7 +15,7 @@ EXPOSE 5000
 
 ENTRYPOINT ["python"]
 
-CMD ["ServerTwo.py"]
+CMD ["WeatherService.py"]
 
 # Run the command to start the application
 # CMD ["python", "ServerTwo.py"]
